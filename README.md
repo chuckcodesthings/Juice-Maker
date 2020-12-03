@@ -1,2 +1,4 @@
 # repo
-My repository for all sorts of codes
+My repository for all sorts of projects I spat out while learning JS.
+
+
