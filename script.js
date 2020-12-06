@@ -1,5 +1,5 @@
-let apples = prompt(`Enter number of apples`)
-let oranges = prompt(`Enter amount of oranges`);
+let apples = window.onkeypress(prompt(`Enter number of apples`)
+let oranges = window.onkeypress(prompt(`Enter amount of oranges`));
 
 if (apples > oranges && oranges == 0) {
   window.alert(`You made apple juice!`);
