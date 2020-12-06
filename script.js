@@ -23,6 +23,14 @@ setTimeout(function () {
   } else {
     window.alert(`Congrats, you made nothing!`);
   }
+  
+  let answer = window.confirm("Save data?");
+if (answer) {
+    location.reload();
+}
+else {
+   return;
+}
 
 }, 75);
 
