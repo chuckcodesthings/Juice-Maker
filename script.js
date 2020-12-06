@@ -20,11 +20,7 @@ setTimeout(function () {
     ? window.alert(`You made a delicious glass of cum`)
     : window.alert(`Congrats, you made nothing!`);
   
-  let makeMoreJuice = window.prompt(`Would you like to make more juice?`);
-    : makeMoreJuice = true
-    ? location.reload();
-    : window.alert(`I thought you were more thirsty...`);
- 
+  
 }, 75);
 
 
