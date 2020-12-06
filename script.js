@@ -23,7 +23,8 @@ setTimeout(function () {
   } else {
     window.alert(`Congrats, you made nothing!`);
   }
- const ui = {
+
+  const ui = {
   confirm: async (message) => createConfirm(message)
 }
 
@@ -45,20 +46,12 @@ const saveForm = async () => {
   const confirm = await ui.confirm('Are you sure you want to do this?');
   
   if(confirm){
-    location.reload();
-    return false;
-  } else{
-    alert('SMH, I expected more from you...');
-  }
-}
-
- const confirm = await ui.confirm('Would you like some more juice?');
-
-  if(confirm){
     alert('yes clicked');
   } else{
     alert('no clicked');
   }
+}
+ 
 
 }, 75);
 
