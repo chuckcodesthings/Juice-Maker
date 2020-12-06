@@ -32,10 +32,13 @@
 
   <p id="demo"></p>
   <script>
-function juiceMaker() {
+function juiceMaker(apples, oranges) {
   let apples = prompt(`Enter number of apples`)
   let oranges = prompt(`Enter amount of oranges`);
-  if (apples > oranges && oranges == 0) {
+}
+
+juiceMaker()
+if (apples > oranges && oranges == 0) {
   window.alert(`You made apple juice!`);
   } else if (apples > 0 && oranges == 0) {
   window.alert(`You made apple-orange juice!`);
@@ -44,7 +47,6 @@ function juiceMaker() {
   } else {
   window.alert(`Congrats, you made nothing!`);
   }
-}
 document.getElementById("demo").innerHTML = "Hello World";
 </script>
 </body>
