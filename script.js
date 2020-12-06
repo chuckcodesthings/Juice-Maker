@@ -5,7 +5,7 @@ setTimeout(function () {
   let cum = prompt(`Enter amount of cum in liters`);
 
   apples > oranges && oranges == 0 && cum == 0
-    ? window.alert(`You made apple juice!`);
+    ? window.alert(`You made apple juice!`)
     : apples > 0 && oranges >= 0 && cum == 0
     ? window.alert(`You made apple-orange juice!`)
     : apples == 0 && oranges > 0 && cum == 0
