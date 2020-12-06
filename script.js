@@ -1,5 +1,3 @@
-'use strict';
-
 let apples = prompt(`Enter number of apples`)
 let oranges = prompt(`Enter amount of oranges`);
 
