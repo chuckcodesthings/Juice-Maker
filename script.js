@@ -1,6 +1,6 @@
 window.onkeydown = function juiceMaker(){
 
-let apples = prompt(`Enter number of apples`
+let apples = prompt(`Enter number of apples`)
 let oranges = prompt(`Enter amount of oranges`);
 }
 
