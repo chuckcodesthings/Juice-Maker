@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,9 +28,27 @@
 
 <body>
   <h1>Charles' Juice Maker</h1>
-  <script src="master/script.js"></script>
-  <button onclick="juiceMaker()">Click me</button>
+  <button onclick="myFunction()">Click me</button>
+
   <p id="demo"></p>
+  <script>
+function juiceMaker() {
+  let apples = prompt(`Enter number of apples`)
+  let oranges = prompt(`Enter amount of oranges`);
+  if (apples > oranges && oranges == 0) {
+  window.alert(`You made apple juice!`);
+  } else if (apples > 0 && oranges == 0) {
+  window.alert(`You made apple-orange juice!`);
+  } else if (apples == 0 && oranges > 0) {
+  window.alert(`You made orange juice!`);
+  } else {
+  window.alert(`Congrats, you made nothing!`);
+  }
+}
+document.getElementById("demo").innerHTML = "Hello World";
+</script>
 </body>
 
 </html>
+
+
