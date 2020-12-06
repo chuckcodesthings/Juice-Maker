@@ -1,10 +1,9 @@
-window.onkeydown = function juiceMaker(apples, oranges){
-
+function juiceMaker(apples, oranges){
 let apples = prompt(`Enter number of apples`)
 let oranges = prompt(`Enter amount of oranges`);
 }
 
-juiceMaker;
+document.getElementById("demo").innerHTML = juicemaker();
 
 if (apples > oranges && oranges == 0) {
   window.alert(`You made apple juice!`);
