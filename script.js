@@ -5,6 +5,7 @@ setTimeout(function () {
   let cum = prompt(`Enter amount of cum in liters`);
 
   apples > oranges && oranges == 0 && cum == 0
+  
     ? window.alert(`You made apple juice!`)
     : apples > 0 && oranges >= 0 && cum == 0
     ? window.alert(`You made apple-orange juice!`)
@@ -20,6 +21,11 @@ setTimeout(function () {
     ? window.alert(`You made a delicious glass of cum`)
     : window.alert(`Congrats, you made nothing!`);
   
+  let makeMoreJuice = window.prompt(`Would you like to make more juice?`);
+  
+    : makeMoreJuice = true
+    ? location.reload();
+    : window.alert(`I thought you were more thirsty...`);
   
 }, 75);
 
