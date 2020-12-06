@@ -24,7 +24,7 @@ setTimeout(function () {
     : makeMoreJuice = true
     ? location.reload();
     : window.alert(`I thought you were more thirsty...`);
-  
+ 
 }, 75);
 
 
