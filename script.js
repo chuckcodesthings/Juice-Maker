@@ -27,6 +27,7 @@ setTimeout(function () {
 window.confirm("Would you like to make more juice");
 
 if (confirm("Press a button!")) {
+  txt = "Preparing your juice machine!"
   location.reload();
   return false;
 } else {
