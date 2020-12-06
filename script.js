@@ -21,10 +21,9 @@ setTimeout(function () {
     : window.alert(`Congrats, you made nothing!`);
   
   let makeMoreJuice = window.prompt(`Would you like to make more juice?`);
-  if makeMoreJuice == true{
-  location.reload();
-}else{ window.alert(`I thought you were more thirsty...`);
-     }
+    : makeMoreJuice = true
+    ? location.reload();
+    : window.alert(`I thought you were more thirsty...`);
   
 }, 75);
 
