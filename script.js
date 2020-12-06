@@ -6,22 +6,22 @@ setTimeout(function () {
 
   apples > oranges && oranges == 0 && cum == 0
   
-    ? window.alert(`You made apple juice!`)
+    ? window.alert('You made apple juice!')
     : apples > 0 && oranges >= 0 && cum == 0
-    ? window.alert(`You made apple-orange juice!`)
+    ? window.alert('You made apple-orange juice!')
     : apples == 0 && oranges > 0 && cum == 0
-    ? window.alert(`You made orange juice!`)
+    ? window.alert('You made orange juice!')
     : apples > oranges && oranges == 0 && cum > 0
-    ? window.alert(`You made apple juice, but it strangely tastes like the milk your uncle gives you when you visit him...`)
+    ? window.alert('You made apple juice, but it strangely tastes like the milk your uncle gives you when you visit him...')
     : apples > 0 && oranges > 0 && cum > 0
-    ? window.alert(`You made apple-orange juice, but it has a noticeable cum aftertaste!`)
+    ? window.alert('You made apple-orange juice, but it has a noticeable cum aftertaste!')
     : apples == 0 && oranges > 0 && cum > 0)
-    ? window.alert(`You mixed semen with orange juice, go to hell!`)
+    ? window.alert('You mixed semen with orange juice, go to hell!')
     : apples == 0 && oranges == 0 && cum > 0)
-    ? window.alert(`You made a delicious glass of cum`)
-    : window.alert(`Congrats, you made nothing!`);
+    ? window.alert('You made a delicious glass of cum')
+    : window.alert('Congrats, you made nothing!');
   
-  let makeMoreJuice = window.prompt(`Would you like to make more juice?`);
+  let makeMoreJuice = window.prompt('Would you like to make more juice?');
   
     : makeMoreJuice = 'yes' || 'Yes' || 'ok' || 'y'
     ? location.reload();
