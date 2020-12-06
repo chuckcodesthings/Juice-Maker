@@ -31,6 +31,24 @@
   <br>Reload the page to make some more juice!
   </h1>
   <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<div class="example">
+  <input type="button" onclick="saveForm()" value="Save" />
+</div>
+
+<!-- Hidden confirm markup somewhere at the bottom of page -->
+
+<div class="confirm">
+  <div></div>
+  <div>
+    <div id="confirmMessage"></div>
+    <div>
+      <input id="confirmYes" type="button" value="Yes" />
+      <input id="confirmNo" type="button" value="No" />
+    </div>
+  </div>
+</div>
 </body>
 
 </html>
