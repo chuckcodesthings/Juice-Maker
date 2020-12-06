@@ -23,16 +23,42 @@ setTimeout(function () {
   } else {
     window.alert(`Congrats, you made nothing!`);
   }
-  
-window.confirm("Would you like to make more juice");
-
-if (confirm("Press a button!")) {
-  txt = "Preparing your juice machine!"
-  location.reload();
-  return false;
-} else {
-  txt = "You pressed Cancel!";
+ const ui = {
+  confirm: async (message) => createConfirm(message)
 }
+
+const createConfirm = (message) => {
+  return new Promise((complete, failed)=>{
+    $('#confirmMessage').text(message)
+
+    $('#confirmYes').off('click');
+    $('#confirmNo').off('click');
+    
+    $('#confirmYes').on('click', ()=> { $('.confirm').hide(); complete(true); });
+    $('#confirmNo').on('click', ()=> { $('.confirm').hide(); complete(false); });
+    
+    $('.confirm').show();
+  });
+}
+                     
+const saveForm = async () => {
+  const confirm = await ui.confirm('Are you sure you want to do this?');
+  
+  if(confirm){
+    location.reload();
+    return false;
+  } else{
+    alert('SMH, I expected more from you...');
+  }
+}
+
+ const confirm = await ui.confirm('Would you like some more juice?');
+
+  if(confirm){
+    alert('yes clicked');
+  } else{
+    alert('no clicked');
+  }
 
 }, 75);
 
