@@ -24,8 +24,8 @@ setTimeout(function () {
   let makeMoreJuice = window.prompt('Would you like to make more juice?');
   
     if (makeMoreJuice = 'yes' || 'Yes' || 'ok' || 'y'){
-    ? location.reload();
-    : window.alert(`I thought you were more thirsty...`);
+      location.reload();
+    }else window.alert(`I thought you were more thirsty...`);
     }
   
 }, 75);
