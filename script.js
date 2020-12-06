@@ -24,12 +24,13 @@ setTimeout(function () {
     window.alert(`Congrats, you made nothing!`);
   }
   
-  let answer = window.confirm("Save data?");
-if (answer) {
-    location.reload();
-}
-else {
-   return;
+window.confirm("Would you like to make more juice");
+
+if (confirm("Press a button!")) {
+  location.reload();
+  return false;
+} else {
+  txt = "You pressed Cancel!";
 }
 
 }, 75);
