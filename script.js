@@ -1,6 +1,10 @@
+setTimeout(function(){
+   
 let apples = prompt(`Enter number of apples`);
 let oranges = prompt(`Enter amount of oranges`);
 let cum = prompt(`Enter amount of cum in liters`);
+ 
+}, 500);
 
 if (apples > oranges && oranges == 0 && cum == 0) {
   window.alert(`You made apple juice!`);
