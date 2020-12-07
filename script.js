@@ -25,8 +25,8 @@ setTimeout(function () {
   
     if (makeMoreJuice = 'yes' || 'Yes' || 'ok' || 'y'){
       location.reload();
-    }else window.alert(`I thought you were more thirsty...`);
-    }
+    }else {window.alert(`I thought you were more thirsty...`);
+          }
   
 }, 75);
 
